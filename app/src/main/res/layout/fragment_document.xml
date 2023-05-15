@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.DocumentFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtDocument"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="애플리케이션 사용법"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txtSubDocument"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="해당 앱은 기사님 전용 앱으로 만들어졌으며,\n서버가 존재하지 않아 고객의 호출을 임의로 발생시켰음을 알려드립니다."
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/txtDocument"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/ivRest"
+                    android:layout_width="200dp"
+                    android:layout_height="400dp"
+                    android:src="@drawable/rest_img"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/txtSubDocument"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="상단 스위치를 통해 영업을 시작/종료할 수 있습니다."
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintTop_toTopOf="@id/ivRest"
+                    app:layout_constraintBottom_toBottomOf="@id/ivRest"
+                    app:layout_constraintStart_toEndOf="@id/ivRest"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/ivSales"
+                    android:layout_width="200dp"
+                    android:layout_height="400dp"
+                    android:src="@drawable/sales_start_img"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/ivRest"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="영업이 시작되면 상태바에 알림이 뜹니다. 그리고 해당 지역의 날씨 정보를 받아올 수 있습니다.\n\n현재 영업은 시작되었지만 콜 대기를 하지 않은 상태입니다."
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintTop_toTopOf="@id/ivSales"
+                    app:layout_constraintBottom_toBottomOf="@id/ivSales"
+                    app:layout_constraintStart_toEndOf="@id/ivSales"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/ivAddCar"
+                    android:layout_width="200dp"
+                    android:layout_height="400dp"
+                    android:src="@drawable/car_add_img"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/ivSales"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="최초 가입자는 콜대기를 위해 차량을 등록하셔야 합니다.\b그렇지 않으면 대기 버튼은 동작하지 않습니다."
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintTop_toTopOf="@id/ivAddCar"
+                    app:layout_constraintBottom_toBottomOf="@id/ivAddCar"
+                    app:layout_constraintStart_toEndOf="@id/ivAddCar"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/ivWaiting"
+                    android:layout_width="200dp"
+                    android:layout_height="400dp"
+                    android:src="@drawable/waiting_call_img"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/ivAddCar"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="콜 멈춤 버튼을 클릭하시면 콜 대기가 시작됩니다."
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintTop_toTopOf="@id/ivWaiting"
+                    app:layout_constraintBottom_toBottomOf="@id/ivWaiting"
+                    app:layout_constraintStart_toEndOf="@id/ivWaiting"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/ivCall"
+                    android:layout_width="200dp"
+                    android:layout_height="400dp"
+                    android:src="@drawable/call_img"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/ivWaiting"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="해당 앱은 기사님 전용 앱이라 실제 고객의 호출이 없습니다.\n콜 대기 후 20초 뒤에 임의로 호출을 만들었습니다."
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintTop_toTopOf="@id/ivCall"
+                    app:layout_constraintBottom_toBottomOf="@id/ivCall"
+                    app:layout_constraintStart_toEndOf="@id/ivCall"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/ivNavi"
+                    android:layout_width="200dp"
+                    android:layout_height="400dp"
+                    android:src="@drawable/navi_img"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/ivCall"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="승인 버튼을 누르게 되면 Map으로 화면이 전환되고, 현재 기사의 위치에서 고객의 위치까지 안내가 시작됩니다."
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintTop_toTopOf="@id/ivNavi"
+                    app:layout_constraintBottom_toBottomOf="@id/ivNavi"
+                    app:layout_constraintStart_toEndOf="@id/ivNavi"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

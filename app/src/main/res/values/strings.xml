@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">TAXIMOBILITY</string>
+    <string name="API_KEY">AIzaSyCKWiasAFQxQ96L66EexDZu_ts4zEq8AwY</string>
+    <string name="signup"><u>회원가입하기</u></string>
+    <string name="login"><u>로그인</u></string>
+    <string name="setting">설정</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="company">
+        <item>현대</item>
+        <item>기아</item>
+        <item>르노삼성</item>
+    </string-array>
+    <string-array name="HModel">
+        <item>그렌저</item>
+        <item>쏘나타</item>
+        <item>아반떼</item>
+        <item>스타렉스</item>
+        <item>싼타페</item>
+        <item>투싼</item>
+        <item>아이오닉5</item>
+    </string-array>
+    <string-array name="KModel">
+        <item>카니발</item>
+        <item>K5</item>
+        <item>K7</item>
+        <item>쏘렌토</item>
+        <item>EV6</item>
+        <item>니로</item>
+        <item>셀토스</item>
+    </string-array>
+    <string-array name="SModel">
+        <item>SM5</item>
+        <item>SM6</item>
+        <item>QM3</item>
+        <item>QM5</item>
+        <item>QM6</item>
+        <item>XM3</item>
+    </string-array>
+    <string-array name="size">
+        <item>소형</item>
+        <item>준중형</item>
+        <item>중형</item>
+        <item>준대형</item>
+        <item>대형</item>
+    </string-array>
+</resources>
